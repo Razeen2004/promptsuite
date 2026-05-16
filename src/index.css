@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-bg: #000000;
+  --color-brand-text: #FFFFFF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.blackel {
+  position: absolute;
+  bottom: 11px;
+  width: 200px;
+  height: 50px;
+  background: #000;
+  right: 2px;
+  z-index: 10;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-remove {
+    display: none;
+  }
+}
+
+:root {
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-text);
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
