@@ -200,7 +200,7 @@ export default function App() {
 
         {/* HERO */}
         <section id="home" className="min-h-screen flex flex-col justify-center px-8 max-w-[1400px] mx-auto relative overflow-hidden pt-30">
-          <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_top,#222,transparent_35%),linear-gradient(to_bottom,#000_00,#000_90)] pointer-events-none" />
+          {/* <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_top,#222,transparent_35%),linear-gradient(to_bottom,#000_00,#000_90)] pointer-events-none" /> */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 h-full items-start relative z-10">
             <div className="flex flex-col gap-10">
               <a href="#contact" className="flex items-center gap-4 group cursor-pointer w-fit">

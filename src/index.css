@@ -11,16 +11,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.blackel {
-  position: absolute;
-  bottom: 11px;
-  width: 200px;
-  height: 50px;
-  background: #000;
-  right: 2px;
-  z-index: 10;
-}
-
 @media screen and (max-width: 767px) {
   .mobile-remove {
     display: none;
