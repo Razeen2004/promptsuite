@@ -181,7 +181,7 @@ export default function App() {
       <div className="fixed inset-0 bg-[radial-gradient(circle_at_50%_50%,#111_0%,#000_100%)] pointer-events-none" />
 
       {/* NAV */}
-      <header className="fixed top-0 left-0 right-0 z-50 px-8 py-3 flex justify-between items-center max-w-[1400px] mx-auto w-full bg-black/20 backdrop-blur-sm">
+      <header className="fixed top-0 left-0 right-0 z-50 px-5 py-3 flex justify-between items-center max-w-[1400px] mx-auto w-full bg-black/20 backdrop-blur-sm">
         <div className="flex items-center gap-2">
           <img src={logoImg} alt="PromptSuite Logo" width={60} />
           <h1 className="text-xl">PromptSuite</h1>
@@ -199,8 +199,11 @@ export default function App() {
       <div className="relative z-10">
 
         {/* HERO */}
-        <section id="home" className="min-h-screen flex flex-col justify-center px-8 max-w-[1400px] mx-auto relative overflow-hidden pt-30">
-          {/* <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_top,#222,transparent_35%),linear-gradient(to_bottom,#000_00,#000_90)] pointer-events-none" /> */}
+        <section id="home" className="min-h-screen flex flex-col justify-center px-5 max-w-[1400px] mx-auto relative overflow-hidden pt-30">
+          <div className="absolute inset-0 z-0 pointer-events-none opacity-60 scale-110 lg:scale-100">
+            <div className="blackel"></div>
+            {/* <spline-viewer url="https://prod.spline.design/ZEUe2McrCdp7aoXb/scene.splinecode"></spline-viewer> */}
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 h-full items-start relative z-10">
             <div className="flex flex-col gap-10">
               <a href="#contact" className="flex items-center gap-4 group cursor-pointer w-fit">
@@ -214,7 +217,7 @@ export default function App() {
               </h2>
             </div>
             <div className="flex flex-col lg:pl-20 text-white/90">
-              <div className="mb-12">
+              <div className="mobile-remove mb-12">
                 <h1 className="text-[10vw] lg:text-[10rem] font-medium leading-[0.8] tracking-[-0.05em] select-none opacity-90">
                   prompt<br />suite
                 </h1>
@@ -239,14 +242,14 @@ export default function App() {
         </section>
 
         {/* SERVICES */}
-        <section id="services" className="min-h-screen py-32 px-8 max-w-[1400px] mx-auto">
+        <section id="services" className="min-h-screen py-32 px-5 max-w-[1400px] mx-auto">
           <div className="mb-24">
             <span className="text-xs uppercase tracking-[0.5em] opacity-40 mb-4 block">What We Build</span>
             <h2 className="text-6xl md:text-8xl font-medium tracking-tighter leading-tight">AI that runs<br />your business.</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1px bg-white/5 border border-white/5">
             {services.map((service) => (
-              <div key={service.title} className="bg-black p-12 flex flex-col gap-8 group hover:bg-white/5 transition-colors duration-300 min-h-[400px]">
+              <div key={service.title} className="bg-black p-8 sm:p-12 flex flex-col gap-8 group hover:bg-white/5 transition-colors duration-300 min-h-[400px]">
                 <div className="opacity-40 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-105 origin-left">
                   {service.icon}
                 </div>
@@ -264,7 +267,7 @@ export default function App() {
         </section>
 
         {/* PRICING */}
-        <section id="pricing" className="py-32 px-8 max-w-[1400px] mx-auto">
+        <section id="pricing" className="py-32 px-5 max-w-[1400px] mx-auto">
           <div className="mb-16 flex flex-col items-end text-right">
             <span className="text-xs uppercase tracking-[0.5em] opacity-40 mb-4 block">What It Costs</span>
             <h2 className="text-6xl md:text-8xl font-medium tracking-tighter leading-tight italic">Simple, honest<br />pricing.</h2>
@@ -295,7 +298,7 @@ export default function App() {
                 className={`relative flex flex-col border transition-all duration-300 ${i === 1
                   ? "border-white/40 shadow-[0_0_60px_rgba(255,255,255,0.07)] scale-[1.03]"
                   : "border-white/10 hover:border-white/25"
-                } bg-black p-10`}
+                } bg-black p-8 sm:p-10`}
               >
                 {tier.badge && (
                   <div className={`absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 text-[10px] uppercase tracking-widest font-bold rounded-full ${i === 1 ? "bg-white text-black" : "bg-white/10 text-white border border-white/20"}`}>
@@ -348,7 +351,7 @@ export default function App() {
         </section>
 
         {/* PORTFOLIO */}
-        <section id="portfolio" className="py-32 px-8 max-w-[1400px] mx-auto">
+        <section id="portfolio" className="py-32 px-5 max-w-[1400px] mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
             <div className="max-w-[600px]">
               <span className="text-xs uppercase tracking-[0.5em] opacity-40 mb-4 block">Our Work</span>
@@ -383,7 +386,7 @@ export default function App() {
         </section>
 
         {/* CONTACT */}
-        <section id="contact" className="min-h-screen py-10 px-8 max-w-[1400px] mx-auto">
+        <section id="contact" className="min-h-screen py-10 px-5 max-w-[1400px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-32">
             <div className="flex flex-col justify-center">
               <span className="text-xs uppercase tracking-[0.5em] opacity-40 mb-8 block">Let's Talk</span>
@@ -410,9 +413,9 @@ export default function App() {
               </div>
             </div>
 
-            <div className="bg-white/5 p-12 lg:p-20 border border-white/5 relative group">
+            <div className="bg-white/5 p-8 lg:p-16 border border-white/5 relative group">
               <div className="absolute top-0 right-0 p-8 opacity-20 transform translate-x-4 -translate-y-4">
-                <Sparkles size={120} strokeWidth={0.5} />
+                <Sparkles className="form-sparklle" size={120} strokeWidth={0.5} />
               </div>
               <form ref={formRef} className="flex flex-col gap-10 relative z-10" onSubmit={sendEmail}>
                 <div className="flex flex-col gap-4">

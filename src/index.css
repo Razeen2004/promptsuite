@@ -15,6 +15,19 @@ html {
   .mobile-remove {
     display: none;
   }
+  section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .form-sparklle{
+    width: 70px;
+  }
+  .tracking-tight{
+    font-size: 35px !important;
+  }
+  .tracking-tighter{
+    font-size: 50px !important;
+  }
 }
 
 :root {
